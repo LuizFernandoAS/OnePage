@@ -16,10 +16,9 @@
             </div>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Perfil</li>
-                    <li>Formação</li>
-                    <li>Contato</li>
+                    <li><a href="index.html#perfil">Perfil</a></li>
+                    <li><a href="index.html#formacao">Formação</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
                 </ul>    
             </nav>
         </header>
@@ -35,7 +34,7 @@
         </section>
 
         <!-- Perfil --> 
-        <section>
+        <section id="perfil"> 
             <img src="#" alt="Foto">
             <article>
                 <h1></h1>
@@ -45,9 +44,10 @@
         </section>
 
         <!--Tabela Formação-->
-        <section>
-            <table>
+        <section id="formacao">
+            <table border="1">
                 <thead>
+                    
                     <th>Nível</th>
                     <th>Curso</th>
                     <th>Ano de Conclusão</th>
@@ -82,12 +82,36 @@
         </section>
 
         <!--Contato-->
-        <section>
-            <form>
-                <input placeholder="Entre com seu nome">
-                <input placeholder="Entre com seu Email">
-                <input placeholder="Entre com seu Mensagem">
+        <section id="contato"> 
+            <form method="GET" action="">
+                <label>Nome:</label>
+                <input type="text" placeholder="Entre com seu nome" required>
+                
+                <label>Data de Nascimento</label>
+                <input type="date">
+
+                <label>Sexo:</label>
+                <input type="checkbox" name="masc" value="Masculino"> Masculino
+                <input type="checkbox" name="fem" value="Feminino"> Feminino <br>
+                
+                <label>E-mail:</label>
+                <input type="text" placeholder="Entre com seu Email" required>
+                
+                <label>País:</label>
+
+                <input list="país">
+                <datalist id="país">
+                    <option value="Brasil">
+                    <option value="Canadá">
+                    <option value="Estados Unidos">
+                </datalist>
+
+                <label>Mensagem:</label>
+                <input type="text" placeholder="Entre com sua Mensagem" required>
+                
+                <button>Enviar</button>
             </form>
+        
         </section>
     </main>
     <footer>
