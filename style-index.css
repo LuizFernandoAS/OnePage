@@ -1,0 +1,13 @@
+nav ul li{  list-style: none;
+            float: left;
+            margin: 4px;
+            padding: 5px;
+            border: 1px solid blue;
+}
+
+a{ text-decoration: none; }
+
+article{ clear: left; }
+
+#perfil img{ width: 20%; }
+#perfil article{ float: right; }
